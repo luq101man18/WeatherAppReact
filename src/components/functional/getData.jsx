@@ -1,46 +1,7 @@
-import { useEffect, useState } from "react";
-import Content from "../layout-component/Content";
-import MainCity from "../layout-component/MainCity";
-import DataRetrieving from "../layout-component/DataRetrieving";
-
 var cityStorageFlag = false;
 const apiKeyVisualCrossing = "FQ52NM2JK4JXEQZVGZJ3PS3HW"
 
-function setPlaceholderToLastCity() {
-    var cityInput = document.getElementById("city");
-    if(cityInput){
-        if (getLastCity() != null){
-            cityInput.value = getLastCity();
-        }
-    }
-}
 
-function loadLastWeatherPage() {
-    setPlaceholderToLastCity();
-    getLastCityWeather(getLastCity());
-}
-
-function getLastCity() {
-    return localStorage.getItem("city");
-}
-
-// use local storage
-window.onload = loadLastWeatherPage();
-
-
-
-async function getLastCityWeather(Lastcity){  
-    let [city, resultData, forecast] = getDivs();        
-        
-    const urlVisualCrossing = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" + Lastcity + "?key=" + apiKeyVisualCrossing;
-    const responseVisualCrossing = await fetch(urlVisualCrossing)
-
-    const dataVisualCrossing = await responseVisualCrossing.json(); 
-    
-    // local storage setting
-    setLocalStorage(city);
-    <Content Data={dataVisualCrossing} />
-}
 function setLocalStorage(value){
     if (!cityStorageFlag){
         localStorage.setItem("city", value);
@@ -117,13 +78,6 @@ function handelWrongCityError(value){
             showContent();
         }
     }
-}
-function getDivs() {
-    var city = document.getElementById("city").value.toLowerCase();
-    var resultData = document.getElementById("result");  
-    var forecast = document.getElementById("forecast");
-    
-    return [city, resultData, forecast];
 }
 
 export default getData;
