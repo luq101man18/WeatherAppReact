@@ -1,0 +1,36 @@
+.forecast-list{
+    /* because nextto has display: flext; property we that affects alignment,
+     we use the below property to align the content to the center
+     */
+    margin-top: $forecast-list-top-margin;
+    margin: $forecast-list-margin;
+    padding: $div-spacing;
+
+        
+    .forecast-background{
+        @include background-image-additions;
+        margin: $forecast-list-forecast-background-margin;
+        text-align: center;
+        color: $forecast-list-forecast-background-color;
+        width: $forecast-list-forecast-background-width;
+        height: $forecast-list-forecast-background-height;
+        padding: $div-spacing;
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .forecast-list{
+        justify-content: center;  
+        margin-top: $desktop-forecast-list-top-margin;
+        margin-bottom: auto;
+        width: $desktop-forecast-list-width;
+        .forecast-background{
+            h6{
+                font-size: $secondary-frame-desktop-font-size
+            }
+            height: $desktop-forecast-list-forecast-background-height;
+            width: $desktop-forecast-list-forecast-background-width;
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+.stations{
+    display: none;
+}
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    .stations{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .stations{
+        display: block;
+        background-color: $containers-color;
+        text-align: center;
+        color: $desktop-color;
+        margin: $desktop-margin;
+        padding: $div-spacing;
+    }
+    .stations:empty{
+        display: none;
+    }
+}
+

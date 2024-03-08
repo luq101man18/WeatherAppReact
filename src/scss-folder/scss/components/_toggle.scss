@@ -1,0 +1,103 @@
+// toggle
+
+// @import "var.scss";
+
+.hide-toggle {
+    visibility: hidden;
+}
+label{
+    position: relative;
+}
+label:before {
+    height: $label-before-height;
+    width: $label-before-width;
+    left: $label-before-left;
+}
+.toggle {
+    visibility: visible;
+    left: $toggle-left;
+    height: $toggle-height;
+    width: $toggle-width;
+    margin-top: $toggle-top-margin;
+    margin-right: $toggle-right-margin;
+
+    input[type="checkbox"].toggle-custom{
+        opacity: $input-toggle-custom-opacity;
+        position: relative;
+    }
+    .toggle-custom + label{
+        position: relative;
+        display: flex;    
+        align-items: center;
+        cursor: pointer;
+    }
+    input[type="checkbox"].toggle-custom + label::before{
+        position: absolute;
+        content: "";
+        width: $input-toggle-custom-label-before-width;
+        height: $input-toggle-custom-label-before-height;
+        background-color:  $input-toggle-custom-label-before-background-color;
+        border-radius: $toggle-border;
+        margin-right: $input-toggle-custom-label-before-right-margin;
+        transition: $input-toggle-custom-label-before-transition;
+    }
+    input[type="checkbox"].toggle-custom + label::after{
+        align-items: center;
+        display: flex;
+        position: absolute;
+        content: "";
+        text-align: center;
+        width: $input-toggle-custom-label-after-width;
+        height: $input-toggle-custom-label-after-height;
+        left: $input-toggle-custom-label-after-left;
+        background-color:  $input-toggle-custom-label-after-background-color;
+        border-radius: $toggle-border;
+    }
+    input[type="checkbox"].toggle-custom:checked + label::before{
+        background-color:  $input-toggle-custom-checked-label-before-background-color;
+    }
+    input[type="checkbox"].toggle-custom:checked + label::after{
+        background-color:  $input-toggle-custom-checked-label-after-background-color;
+        
+        /* adopted */
+        left: calc(100% + 0.5em); 
+    }
+}
+
+@media only screen  and (min-width: $ipad-breakpoint) {
+    .toggle{
+        input[type="checkbox"].toggle-custom:checked + label::after{
+            background-color:  $ipad-input-toggle-custom-checked-label-after-background-color;
+        
+            /* adopted */
+            left: calc(100% + 0.5em); 
+        }
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .toggle{
+        input[type="checkbox"].toggle-custom + label::before{
+            width: $desktop-input-toggle-custom-label-before-width;
+            height: $desktop-input-toggle-custom-label-before-height;
+        }
+        input[type="checkbox"].toggle-custom + label::after{
+            align-items: center;
+            display: flex;
+            position: absolute;
+            content: "";
+            text-align: center;
+            width: $desktop-input-toggle-custom-label-after-width;
+            height: $desktop-input-toggle-custom-label-after-height;
+            left: $desktop-input-toggle-custom-label-after-left;
+            background-color:  $desktop-input-toggle-custom-label-after-background-color;
+            border-radius: $toggle-border;
+        }
+        input[type="checkbox"].toggle-custom:checked + label::after{
+            background-color:  $desktop-input-toggle-custom-checked-label-after-background-color;
+        
+            /* adopted */
+            left: calc(100% + 1.29em); 
+        }
+    }
+}

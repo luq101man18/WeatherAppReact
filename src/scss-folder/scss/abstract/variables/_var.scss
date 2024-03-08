@@ -1,0 +1,61 @@
+// colors
+$background-color: #E1F0DA;
+$containers-color: #BFD8AF;
+$error-color: #ad3636;
+
+// border
+$div-border: 11px;
+$search-bar-border: 50px;
+$toggle-border: 2em;
+
+// space
+$div-spacing: 10px;
+
+// fontsize
+$mobile-font-size: 1.7em;
+$ipad-font-size: 2em;
+$desktop-font-size: 2.5em;
+$secondary-frame-desktop-font-size: 1.3em;
+
+// width
+/// Main frame
+//// form-city
+$form-city-top-margin: 5%;
+////// weatherDescribtion
+$desktop-weatherDescribtion-width: 222px;
+$weatherDescribtion-width: 100%;
+
+/// Secondary frame
+
+
+
+
+// margin
+//// weatherDescribtion
+$weatherDescribtion-top-margin: 2%;
+
+
+
+
+
+@import "breakpointvar";
+
+@import "inputvar";
+
+@import "buttonvar";
+
+@import "invalidinputvar";
+@import "modalvar";
+
+@import "togglevar";
+@import "alertsvar";
+
+@import "footervar";
+@import "forecastlistvar";
+@import "formcityvar";
+
+@import "mapvar";
+@import "searchframevar";
+@import "stationsvar";
+
+@import "sunvar";

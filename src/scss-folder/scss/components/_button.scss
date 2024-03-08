@@ -1,0 +1,19 @@
+
+.button-additions { 
+    margin-top: $button-top-margin;
+    border: $button-border;
+    padding: $button-padding;
+    width: $button-width;
+    border-radius: $search-bar-border;
+    background-color: $containers-color;
+} 
+button:active{
+    background-color: $containers-color;
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .button-additions { 
+        width: $desktop-button-width;
+        margin-top: $desktop-button-top-margin;
+    }   
+}

@@ -1,0 +1,62 @@
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: $h-font-weight;
+    text-align: center;
+}
+h1{
+    font-size: $mobile-font-size;
+}
+h6, p{
+    font-size: $secondary-frame-desktop-font-size;
+}
+body{
+    background-color: $background-color;
+    font-family: $font;
+    text-align: center;
+    margin: $body-margin;
+    display: block;
+    font-weight: $body-font-weight;
+}
+// necessary to override Bootstrap
+*, ::before, ::after{
+    box-sizing: content-box;
+}
+/* added to fix responsivenss */
+.wrapper{ 
+    width: $wrapper-width; 
+}
+div{
+    border-radius: $div-border;
+}
+img {
+    max-width: $img-max-width;
+    height: auto;
+}
+.nextto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-and-secondary{
+    text-align: center;
+}
+.map-station{
+    padding: $map-station-padding;
+}
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    h1{
+        font-size: $ipad-font-size;
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    h1{
+        font-size: $ipad-font-size;
+    }
+    .nextto{
+        display: flex;
+        flex-direction: row;
+    }
+}
+

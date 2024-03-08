@@ -1,0 +1,30 @@
+
+.cloudy {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/clouds.jpg);
+}
+.snow {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/snow.jpg);
+}
+.rain {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/rain2.jpg);
+}
+.clear {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/clear.jpg);
+}
+.overcast {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/overcast.jpg);
+}
+.sunrise {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/sunrise.jpg);
+}
+.sunset {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/sunset.jpg);
+}
+.sun-times {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../components/images/sun.jpg);
+}
+.card-body{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px
+}

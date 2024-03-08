@@ -1,0 +1,29 @@
+.homepage{
+    margin-top: $homepage-top-margin;
+    text-align: center;
+    align-items: center;
+    padding: $div-spacing;
+    
+    .weather-app-title{
+        font-size: $mobile-font-size;
+        margin-bottom: $homepage-weather-app-title-bottom-margin;
+    }
+}   
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    .homepage{
+        .weather-app-title{
+            font-size: $ipad-font-size;
+            margin-bottom: $ipad-homepage-weather-app-title-bottom-margin;
+        }
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .homepage{
+        .weather-app-title{
+            font-size: $desktop-font-size;
+            margin-bottom: $desktop-homepage-weather-app-title-bottom-margin;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+
+.form-city{
+    @include background-image-additions;
+    align-items: center;
+    margin-top: $form-city-top-margin;
+    padding: $div-spacing;
+    
+    .weatherDescribtion{
+        color: $form-city-weatherDescribtion-color;
+        width: $weatherDescribtion-width;
+        margin-top: $weatherDescribtion-top-margin;
+        text-align: center;
+        flex: $form-city-weatherDescribtion-flex;  
+    }
+    .weatherDescribtion:empty{
+        display: none;
+    }
+    
+    .weather-details{
+        display: none;
+    }
+    .weather-icon{
+        display: visible;
+    }
+}
+
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    .form-city{
+        .weather-details{
+            display: block;
+        }
+
+        .weather-icon{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .form-city{
+        width: $desktop-form-city-width; 
+
+        .weatherDescribtion{
+            width: $desktop-weatherDescribtion-width; 
+            text-align: left;
+            color: $desktop-form-city-weatherDescribtion-color;
+        }
+        .weather-details{
+            display: block;
+
+        }
+        .weatherDescribtion:empty{
+            display: none;
+        }
+        
+        .weather-icon{
+            display: none;
+        }
+    }
+}

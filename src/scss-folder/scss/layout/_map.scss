@@ -1,0 +1,23 @@
+#map{
+    height: $map-id-height;
+    padding: $map-id-padding;
+}
+.mapview{
+    display: none;
+}
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    .mapview{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .mapview{
+        margin: $mapView-margin;    
+        width: $mapView-width;
+        padding: $mapView-padding;
+        display: block;
+    }
+}
+

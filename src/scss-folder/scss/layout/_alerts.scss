@@ -1,0 +1,9 @@
+.alerts{
+    margin: $alerts-margin;
+    text-align: center;
+    background-color: $containers-color;
+    border-color: $alerts-border-color;
+}
+.alerts:empty{
+    display: none;
+}

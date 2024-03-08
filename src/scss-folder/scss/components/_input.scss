@@ -1,0 +1,26 @@
+
+.search-bar-input{
+    padding: $input-padding;
+    border-radius: $search-bar-border;
+    border: $input-border;
+    text-align: center;
+    align-items: center;
+    width: $input-width;
+    background-color: transparent;
+} 
+.search-bar-input:hover{
+    background-color: $containers-color;
+    transition: $input-transition;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .search-bar-input{
+        margin-left: $desktop-margin-left;
+        width: $desktop-width;
+    }
+}

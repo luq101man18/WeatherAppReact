@@ -1,0 +1,15 @@
+.invalid-input:empty{
+    display: none;
+}
+.invalid-input{
+    margin-top: $invalid-input-top-margin;
+}
+.error {
+    color: $error-color;
+}
+.error:empty {
+    display: none;
+}
+.error-input{
+    border-color: $error-color;
+}

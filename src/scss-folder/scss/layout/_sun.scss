@@ -1,0 +1,68 @@
+// @import "var.scss";
+// @import "backgroundImages.scss";
+
+.sun:empty{
+    display: none;
+}
+.sun{
+    @include background-image-additions;
+    text-align: center;
+    color: $sun-color;
+    margin-top: $sun-margin-top;
+    margin: $sun-margin;
+    width: $sun-width;
+    height: $sun-height;
+    padding: $div-spacing;
+    .card-body{
+        border-radius: $div-border;
+    }
+}
+.sun-timings{
+    display: none;
+}
+
+@media only screen and (min-width:$ipad-breakpoint) {
+    .sun{
+        width: $ipad-sun-width;
+        height: $ipad-sun-height;
+        padding: $div-spacing;
+    }
+    .sun-timings{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width:$desktop-breakpoint) {
+    .sun-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .sun{
+            margin: $desktop-sun-margin;
+            height: $desktop-sun-height;
+            flex: $desktop-sun-flex;
+            padding-top: $desktop-sun-padding-top;
+        }
+
+        .sun-timings{
+            @include background-image-additions;
+            display: block;
+            text-align: center;
+            color: $desktop-sun-timing-color;
+            margin: $desktop-sun-timing-margin;
+            width: $desktop-sun-timing-width;
+            height: $desktop-sun-timing-height;
+            flex: $desktop-sun-timing-flex;
+            padding-top: $desktop-sun-timing-padding-top;
+            .card-body{
+                border-radius: $div-border;
+            }
+            
+        }
+
+
+    }
+}

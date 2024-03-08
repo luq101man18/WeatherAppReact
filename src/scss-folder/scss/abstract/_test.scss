@@ -1,0 +1,70 @@
+.days {
+    display: flex;
+
+    .main-frame-test {
+        // Your styles for main-frame-test
+        .card{
+                width: 600px;
+                height: 900px;
+            img{
+                height: 400px;
+            }
+            // .card-body{
+            //     .zero-day{
+
+            //     }
+            // }
+        }
+    }
+
+    .secondary-frame-test {
+        display: flex;
+        flex-direction: row;
+
+        .first-half {
+            display: flex;
+            flex-direction: column;
+                .card {
+                    width: 400px;
+                    height: 400px;
+
+                    img {
+                        // width: 100px;
+                        // height: 100px;
+                    }
+                }
+            .first-day {
+                // Your styles for first-day and third-day
+
+
+            }
+            .third-day {
+
+            }
+        }
+
+        .second-half {
+            display: flex;
+            flex-direction: column;
+                .card {
+                    width: 400px;
+                    height: 400px;
+
+                    img {
+                         @include background-image-additions;
+                        // width: 100px;
+                        // height: 100px;
+                    }
+                }
+            .fourth-day{
+                // Your styles for fourth-day and second-day
+
+
+            }
+            .second-day{
+                
+
+            }
+        }
+    }
+}
