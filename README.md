@@ -15,9 +15,9 @@
 
 ### Main Interface
 ![Weather App](images/heading.png)
-![Weather Details](images/weatherdetails.png.png)
-![Sunrise and Sunset](images/sun.png.png)
-![Location](images/map.png.png)
+![Weather Details](images/weatherdetails.png)
+![Sunrise and Sunset](images/sun.png)
+![Location](images/map.png)
 
 
 ## Getting Started
