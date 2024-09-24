@@ -40,7 +40,7 @@ function App(){
             } catch (error) {
                 console.log(error);
             }
-        }
+        }W
         fetchDataFromAPI();
         setPlaceholderToLastCity();
     }, [city]);
