@@ -14,10 +14,10 @@
 ## Screenshots
 
 ### Main Interface
-![Weather App](/my-app/images/heading.png)
-![Weather Details](/my-app/images/weatherdetails.png.png)
-![Sunrise and Sunset](/my-app/images/sun.png.png)
-![Location](/my-app/images/map.png.png)
+![Weather App](images/heading.png)
+![Weather Details](images/weatherdetails.png.png)
+![Sunrise and Sunset](images/sun.png.png)
+![Location](images/map.png.png)
 
 
 ## Getting Started
